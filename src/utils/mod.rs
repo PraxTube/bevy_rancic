@@ -6,6 +6,30 @@ use bevy_rapier2d::prelude::*;
 /// Empty `CollisionGroups` for Rapier.
 /// Useful if you want disable collisions for an entity completely.
 pub const COLLISION_GROUPS_NONE: CollisionGroups = CollisionGroups::new(Group::NONE, Group::NONE);
+/// Transparent `ColliderDebugColor` for Rapier colliders.
+/// Useful if you want to hide colliders (when they are inactive for example).
+pub const COLLIDER_COLOR_TRANSPARENT: ColliderDebugColor = ColliderDebugColor(Hsla {
+    hue: 0.0,
+    saturation: 0.0,
+    lightness: 0.0,
+    alpha: 0.0,
+});
+/// White `ColliderDebugColor` for Rapier colliders.
+/// Useful if you want to highlight colliders (when they are active for example).
+pub const COLLIDER_COLOR_WHITE: ColliderDebugColor = ColliderDebugColor(Hsla {
+    hue: 1.0,
+    saturation: 1.0,
+    lightness: 1.0,
+    alpha: 1.0,
+});
+/// Black `ColliderDebugColor` for Rapier colliders.
+/// Useful if you want to highlight colliders (when they are active for example).
+pub const COLLIDER_COLOR_BLACK: ColliderDebugColor = ColliderDebugColor(Hsla {
+    hue: 0.0,
+    saturation: 0.0,
+    lightness: 0.0,
+    alpha: 1.0,
+});
 
 pub struct UtilsPlugin;
 

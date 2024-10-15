@@ -35,7 +35,8 @@ pub mod prelude {
     };
     pub use crate::utils::{
         debug::{DebugState, ToggleDebugStateEvent},
-        quat_from_vec2, quat_from_vec3, COLLISION_GROUPS_NONE,
+        quat_from_vec2, quat_from_vec3, COLLIDER_COLOR_BLACK, COLLIDER_COLOR_TRANSPARENT,
+        COLLIDER_COLOR_WHITE, COLLISION_GROUPS_NONE,
     };
     pub use crate::RancicPlugin;
 }
