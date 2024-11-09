@@ -30,7 +30,7 @@ impl Plugin for RancicPlugin {
 pub mod prelude {
     pub use crate::audio::{GameAudio, PlaySound, SpacialSound};
     pub use crate::camera::{
-        CameraShake, CameraSystem, MainCamera, ToggleFullscreenEvent, YSort, YSortChild,
+        CameraSettings, CameraSystem, MainCamera, ToggleFullscreenEvent, YSort, YSortChild,
         YSortStatic, YSortStaticChild, ZoomCameraScaleEvent,
     };
     pub use crate::utils::{

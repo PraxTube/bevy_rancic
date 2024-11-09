@@ -1,6 +1,6 @@
 mod shake;
 
-pub use shake::{CameraShake, CameraSystem};
+pub use shake::{CameraSettings, CameraSystem};
 
 use bevy::prelude::*;
 use bevy::render::camera::ScalingMode;
