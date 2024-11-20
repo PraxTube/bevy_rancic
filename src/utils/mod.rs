@@ -39,7 +39,7 @@ impl Plugin for UtilsPlugin {
     }
 }
 
-/// Convert `Vec2` to `Quat` by taking angle bettwen `Vec2::X`.
+/// Convert `Vec2` to `Quat` by taking angle between `Vec2::X`.
 /// Returns `Quat::IDENTITY` for `Vec2::ZERO`.
 pub fn quat_from_vec2(direction: Vec2) -> Quat {
     if direction == Vec2::ZERO {
