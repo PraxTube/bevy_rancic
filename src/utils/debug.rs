@@ -20,7 +20,7 @@ fn toggle_rapier_debug(
     debug_active: Res<DebugState>,
 ) {
     if debug_context.enabled != **debug_active {
-        debug_context.enabled = **debug_active;
+        debug_context.enabled = false;
     }
 }
 
