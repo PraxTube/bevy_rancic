@@ -21,7 +21,7 @@ use crate::utils::debug::DebugState;
 // too large values will lead to overflow of the 1000 range
 // (in which case they won't get rendered on the camera anymore).
 const YSORT_SCALE: f32 = 0.0001;
-const PROJECTION_SCALE: f32 = 350.0;
+const PROJECTION_SCALE: f32 = 450.0;
 
 /// Marker `Component` for the main camera.
 /// There should only be one entity with this `Component`.
